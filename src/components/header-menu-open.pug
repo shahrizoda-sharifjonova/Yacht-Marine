@@ -1,4 +1,4 @@
-mixin header()
+mixin header-menu-open()
     header.header
         nav.header__nav.container 
             a(href="index.html").logo 
@@ -6,9 +6,9 @@ mixin header()
             .header__buttons 
                 a(href="tel::+66619077721").header__phone +66 61 907 7721
                 a(href="#!").header__btn.disable-lg Заказать
-                .menu 
+                .menu.active 
                     span.menu-btn
-                ul.header__list.disable-lg
+                ul.header__list.disable-lg.active
                     li.header__li 
                         a(href="#!").header__link About 
                     li.header__li 
@@ -35,4 +35,4 @@ mixin header()
                             a(href="#!").header__link Technical specifications 
                         li.header__li 
                             a(href="#!").header__link Gallery
-                        a(href="#!").header__btn.enable-lg Заказать  
+                        a(href="#!").header__btn.enable-lg Заказать 
