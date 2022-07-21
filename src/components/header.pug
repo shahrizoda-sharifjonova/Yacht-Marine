@@ -1,4 +1,10 @@
 mixin header()
     header.header
         nav.header__nav.container 
-            
+            a(href="index.html").logo 
+                img(src="@img/logo.svg", alt="" draggable="false" loading="lazy") 
+            .header__buttons 
+                a(href="tel::+66619077721").header__phone +66 61 907 7721
+                a(href="#!").header__btn Заказать
+                .menu 
+                    span.menu-btn 
