@@ -190,8 +190,19 @@
             padding-right: 0;
         }
         &.active{
-            opacity: 1;
-            visibility: visible;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        &.enable-lg{
+            display: none;
+            @include media(992){
+                display: flex !important;
+                &.active{                        
+                    opacity: 1;
+                    visibility: visible;
+
+                }
+            }
         }
     }
     &__li{
