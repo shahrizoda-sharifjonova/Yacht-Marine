@@ -16,5 +16,7 @@ const checkHeader = () => {
     }
 }
 
-document.addEventListener('scroll', checkHeader)
-document.addEventListener('load', checkHeader)
+if(document.querySelector(".header")){
+    document.addEventListener('scroll', checkHeader)
+    document.addEventListener('load', checkHeader)
+}
